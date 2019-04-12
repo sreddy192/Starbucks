@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Starbucks</display-name>
+  <servlet>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>com.example.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/command/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Validate</servlet-name>
+    <servlet-class>com.example.Validate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validate</servlet-name>
+    <url-pattern>/validate/*</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+</web-app>
